@@ -58,6 +58,20 @@ def extract(html, page):
                 pass
     return items
 
+def copper():
+    """Westmetall 공개 LME 전기동 정산가 (최신 1행)"""
+    try:
+        html = get("https://www.westmetall.com/en/markdaten.php?action=table&field=LME_Cu_cash")
+        for hs, body in parse_tables(html):
+            if any("Cash-Settlement" in h for h in hs):
+                for c in body:
+                    if len(c) >= 4 and re.match(r"\d{2}\.", c[0]):
+                        return {"date": c[0], "lme": float(c[1].replace(",", "")),
+                                "lme3m": float(c[2].replace(",", "")), "stock": float(c[3].replace(",", ""))}
+    except Exception as e:
+        print("WARN copper fail:", e)
+    return None
+
 def main():
     p = {}
     for url in ("https://www.trendforce.com/price/dram/dram_spot",
@@ -76,7 +90,9 @@ def main():
     except Exception as e:
         print("WARN fx fail:", e)
 
-    if not p and not fx:
+    cu = copper()
+
+    if not p and not fx and not cu:
         raise SystemExit("nothing collected")
 
     try:
@@ -85,10 +101,12 @@ def main():
         db = []
     d = kst_today()
     entry = {"d": d, "fx": fx, "p": p}
+    if cu:
+        entry["cu"] = cu
     db = [e for e in db if e.get("d") != d] + [entry]
     db.sort(key=lambda e: e["d"])
     json.dump(db, open(DB, "w", encoding="utf-8"), ensure_ascii=False, indent=1)
-    print("saved", d, "items:", len(p), "fx:", bool(fx), "total days:", len(db))
+    print("saved", d, "items:", len(p), "fx:", bool(fx), "cu:", bool(cu), "total days:", len(db))
 
 if __name__ == "__main__":
     main()
