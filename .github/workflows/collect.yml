@@ -1,8 +1,9 @@
 name: daily-collect
 on:
   schedule:
-    - cron: '30 23 * * *'   # UTC 23:30 = ?쒓뎅?쒓컙 留ㅼ씪 08:30
-  workflow_dispatch: {}      # ?섎룞 ?ㅽ뻾 踰꾪듉
+    - cron: '30 23 * * *'   # UTC 23:30 = 한국시간 매일 08:30
+    - cron: '30 3 * * *'    # UTC 03:30 = 한국시간 12:30 (지연·누락 보완, 같은 날짜는 덮어씀)
+  workflow_dispatch: {}      # 수동 실행 버튼
 permissions:
   contents: write
 jobs:
