@@ -191,7 +191,7 @@
   "p": {
    "DDR5 16Gb (2Gx8) 4800/5600": 51.767,
    "DDR5 16Gb (2Gx8) eTT": 23.64,
-   "DDR4 16Gb (2Gx8) 3200": 86.5,
+   "DDR4 16Gb (2Gx8) 3200": 86.744,
    "DDR4 16Gb (2Gx8) eTT": 11.4,
    "DDR4 8Gb (1Gx8) 3200": 42.45,
    "DDR4 8Gb (1Gx8) eTT": 4.208,
@@ -203,16 +203,16 @@
    "DDR4 8Gb 1Gx8": 21.0,
    "DDR4 4Gb 256Mx16": 13.0,
    "DDR3 4Gb 256Mx16": 12.5,
-   "SLC 2Gb 256MBx8": 4.2,
-   "SLC 1Gb 128MBx8": 3.515,
-   "MLC 64Gb 8GBx8": 32.913,
-   "MLC 32Gb 4GBx8": 16.1,
+   "SLC 2Gb 256MBx8": 4.275,
+   "SLC 1Gb 128MBx8": 3.525,
+   "MLC 64Gb 8GBx8": 34.75,
+   "MLC 32Gb 4GBx8": 16.938,
    "NAND 128Gb 16Gx8 MLC": 28.82,
    "NAND 64Gb  8Gx8 MLC": 21.365,
    "NAND 32Gb 4Gx8 MLC": 17.075,
-   "512Gb TLC": 19.25,
-   "256Gb TLC": 10.787,
-   "128Gb TLC": 6.853
+   "512Gb TLC": 20.125,
+   "256Gb TLC": 12.538,
+   "128Gb TLC": 7.833
   },
   "cu": {
    "date": "07. August 2026",
