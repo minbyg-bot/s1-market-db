@@ -1855,5 +1855,46 @@
    "lme3m": 14515.0,
    "stock": 255100.0
   }
+ },
+ {
+  "d": "2026-09-21",
+  "fx": {
+   "USD": 1388.1,
+   "CNY": 207.25,
+   "JPY": 879.16,
+   "EUR": 1590.76
+  },
+  "p": {
+   "DDR5 16Gb (2Gx8) 4800/5600": 56.0,
+   "DDR5 16Gb (2Gx8) eTT": 24.6,
+   "DDR4 16Gb (2Gx8) 3200": 85.75,
+   "DDR4 16Gb (2Gx8) eTT": 13.225,
+   "DDR4 8Gb (1Gx8) 3200": 46.036,
+   "DDR4 8Gb (1Gx8) eTT": 5.77,
+   "DDR3 4Gb 512Mx8 1600/1866": 13.78,
+   "DDR5 8GB SO-DIMM": 130.0,
+   "DDR4 16GB SO-DIMM": 265.0,
+   "DDR4 8GB SO-DIMM": 139.0,
+   "DDR4 16Gb 2Gx8": 48.0,
+   "DDR4 8Gb 1Gx8": 24.0,
+   "DDR4 4Gb 256Mx16": 14.5,
+   "DDR3 4Gb 256Mx16": 14.5,
+   "SLC 2Gb 256MBx8": 4.313,
+   "SLC 1Gb 128MBx8": 3.4,
+   "MLC 64Gb 8GBx8": 39.25,
+   "MLC 32Gb 4GBx8": 18.938,
+   "NAND 128Gb 16Gx8 MLC": 30.048,
+   "NAND 64Gb  8Gx8 MLC": 23.11,
+   "NAND 32Gb 4Gx8 MLC": 17.865,
+   "512Gb TLC": 20.146,
+   "256Gb TLC": 16.808,
+   "128Gb TLC": 9.967
+  },
+  "cu": {
+   "date": "18. September 2026",
+   "lme": 14529.0,
+   "lme3m": 14515.0,
+   "stock": 255100.0
+  }
  }
 ]
